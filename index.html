@@ -8,25 +8,67 @@
     <title></title>
 </head>
 <body>
-  <div class="container">
-    <h1>Create a Task List</h1>
+  <div class="container-fluid">
+
+    <h1>To-Do List</h1>
+
+      <div class="row">
+      <div id="first-column" class="col-md-4">
+        <h2>LISTS:</h2>
+
+          <div class="list-items">
+            <ul id="append-list">
+            </ul> <!-- ul for appended list -->
+          </div> <!-- this is the div for the list-tasks -->
+
+      </div> <!--This is the div for the Lists  -->
+
+
+      <div id="second-column" class = "col-md-4">
+        <div id="header">
+        <h2></h2>
+        </div>
+        <div id="task-list">
+        <ul class="task-list">
+        </ul>
+      </div>
+      </div>
+    </div> <!---this is the row for task list-->
+
     <div class="row">
       <div id="first-column" class = "col-md-4">
-        <h2>Add Task</h2>
-        <form id="task">
+        <h2>CREATE LIST:</h2>
+
+        <form id="create-list">
           <div class="form-group">
-              <label for="task-item">Enter the task here!</label>
-              <input type="text" class="form-control" id="task-item">
+              <input type="text" class="form-control" placeholder="ADD NEW LIST:" id="list-item">
               <br>
-              <button class="btn btn-primary" type=submit id="submit-button">Submit</button>
+              <button class="btn btn-primary" type=submit id="submit-button">+ Create</button>
             </div>
         </form>
-      </div>
-      <div id="second-column" class = "col-md-8">
-        <h2>Task List</h2>
-        <ul id="task-list">
-      </div>
-    </div>
+
+      </div> <!--This is the div for the Create a List -->
+
+
+      <div id="first-column" class = "col-md-4">
+        <h2>CREATE TASK:</h2>
+
+        <form id="create-task">
+          <div class="form-group">
+              <input type="text" class="form-control" placeholder="ADD NEW TASK:" id="task-item">
+              <br>
+              <button class="btn btn-primary" type=submit id="submit-button">+ Create</button>
+            </div>
+        </form>
+
+      </div> <!--This is the div for the Create a List -->
+    </div> <!--This is the div for the row -->
+
+
+
+
+
+
   </div>
 </body>
 </html>

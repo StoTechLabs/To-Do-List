@@ -1,13 +1,4 @@
-.task-item:hover {
-  color: red;
-  cursor: pointer;
+#header {
+  font-size: 30px;
 
-}
-
-.task-item {
-  color: blue;
-}
-
-.task-change {
-  text-decoration: line-through;
 }
